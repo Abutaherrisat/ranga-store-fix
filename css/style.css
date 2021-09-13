@@ -4,9 +4,7 @@ body {
   
 }
 .main{
- 
-  /* background-image: linear-gradient(90deg, lightsteelblue,rgb(169, 146, 223)); */
-  background-image: linear-gradient(90deg, white,rgb(255, 158, 158),lightgray);
+  background-color: #0a272b;
 }
 
 .search-field {
@@ -14,6 +12,7 @@ body {
   border-radius: 10px;
   padding: 5px;
   outline: none;
+  width: 300px;
 }
 
 .search-field:hover {
@@ -51,21 +50,17 @@ body {
 
 .single-product {
   padding: 10px;
-  box-shadow: 4px 4px 7px gray;
   border-radius: 15px;
   transition: 0.6s;
   /* background-color: rgb(66, 248, 157); */
-  background-image: linear-gradient(60deg, teal, cyan);
+  background-color: #117fa3;
   font-weight: 700;
+  margin: 10px;
 }
 
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
-  border-radius: 25px;
-  border: 1px solid black;
-  background-image: linear-gradient(90deg, cyan,teal);
- 
-  
+  /* border-radius: 25px; */
+  background-color: teal;
 }
 
 .product-image {
