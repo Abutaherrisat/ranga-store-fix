@@ -1,17 +1,26 @@
 body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
+  
 }
+.main{
+ 
+  /* background-image: linear-gradient(90deg, lightsteelblue,rgb(169, 146, 223)); */
+  background-image: linear-gradient(90deg, white,rgb(255, 158, 158),lightgray);
+}
+
 .search-field {
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   padding: 5px;
   outline: none;
 }
+
 .search-field:hover {
   outline: none;
   border: none;
 }
+
 .search-box {
   border: 1px solid rgb(3, 118, 211);
   width: 281px;
@@ -20,34 +29,50 @@ body {
   margin-top: 50px;
   border-right: none;
 }
+
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
+
 #all-products {
   display: grid;
+  grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   /* border: 1px solid black; */
   text-align: center;
-  width: 100%;
+  width: 95%;
   margin: auto;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
 }
+
 .single-product {
   padding: 10px;
+  box-shadow: 4px 4px 7px gray;
+  border-radius: 15px;
   transition: 0.6s;
+  /* background-color: rgb(66, 248, 157); */
+  background-image: linear-gradient(60deg, teal, cyan);
+  font-weight: 700;
 }
+
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
-  border-radius: 10px;
-  border: 1px solid cyan;
+  border-radius: 25px;
+  border: 1px solid black;
+  background-image: linear-gradient(90deg, cyan,teal);
+ 
+  
 }
+
 .product-image {
   width: 150px;
   height: 150px;
 }
+
 .cart {
   width: 350px;
   /* border: 1px solid green; */
@@ -55,11 +80,14 @@ body {
   box-shadow: 10px 10px 20px gray;
   border-radius: 5px;
   margin-right: 30px;
+  background-image: linear-gradient(90deg, lightgray,darkgray);
   position: fixed;
 }
+
 .cart-main {
   padding-right: 30px;
 }
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -78,6 +106,7 @@ body {
     padding-right: 10px;
   }
 }
+
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
